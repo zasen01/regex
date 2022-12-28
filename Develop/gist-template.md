@@ -1,10 +1,15 @@
 # Git the Jist of RegEx
-
-Introductory paragraph (replace this with your text)
+Matching a Hex Value
 
 ## Summary
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+#? = Match # Y/N(0 or 1)
+() Captures the group of items
+within the first group
+[a-f0-9] this matches a charachter within the rages of a-f and 0-9 and is case sensitive the {6} that follows says to match 6 of the previous items
+| means OR so it is either match what is before it OR after it.
+[a-f0-9] this matches a charachter within the rages of a-f and 0-9 and is case sensitive the {3} that follows says to match 3 of the previous items
 
 ## Table of Contents
 
@@ -65,6 +70,7 @@ u = Unicode
 ### Bracket Expressions
 
 [] = Used to make a list of Acceptable or Unacceptable tokens.
+
 ### Greedy and Lazy Match
 
 {}? = Lazy Match it matches the preceding character as few as possible
